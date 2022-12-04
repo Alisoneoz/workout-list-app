@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Outfit:wght@200&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+
+/*colors used*/
+:root{
+--purple:#1D1145;
+--pink:#E76D89;
+--lightpink:#F2A1A1;
+--bone:#EDEDEE;
+--shadow1:#11111a0d;
+--aqua:#39A0CA; 
+--error:#C80E13;
+}
+
+
+body{
+  background-color: var(--bone);
+  color: #0E0B16;
+  text-decoration: none;
+  margin:0;
+  font-family: 'Alata', sans-serif;
+}
+
+/* navbar */
+
+.navbar{
+  color: var(--bone);
+}
+
+a:link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.container{
+  max-width: 1400px;
+  margin:0 auto;
+  padding:45px 20px;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--purple);
+}
+
+/*homepage*/
+.home{
+  display:grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 100px;
+}
+/* Workout List */
+.workout-details{
+  background-color: #E7DFDD;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+  padding-left: 30px;
+  padding-top:5px;
+  padding-bottom: 20px;
+  margin:30px auto;
+  margin-left: 20px;
+  position: relative; /*nande?*/
+  border-radius: 5px;
+  
+}
+
+.workout-details:hover{
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+.workout-details h4{
+  font-size: 1.2em;
+  color: var(--purple);
+}
+
+.workout-details p{
+  font-size: 0.9em;
+}
+
+/*delete icon*/
+.material-symbols-outlined{
+  cursor:pointer;
+  position: absolute;
+  top:30px;
+  right:20px;
+}
+
+/*pages*/
+.pages{
+  padding: 20px;
+  margin: 0 auto;
+}
+
+/*new workourt form*/
+
+label, input{
+  display: block;
+}
+
+input{
+  margin-top: 7px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  border: 1px solid var(--purple);
+  padding: 5px;
+}
+
+form button{
+  background: var(--aqua);
+  color:var(--bone);
+  font-weight: bold;
+  border: 2px solid #00000048;
+  padding: 7px 20px;
+  border-radius: 7px;
+  box-shadow: 1px 1px 3px var(--purple);
+}
+
+
+
+/* Error handler*/
+input.error{
+  border: 2px solid var(--error);
+  box-shadow: 1px 1px 9px var(--error);
+}
+
+div.error{
+  width: 150px;
+  text-align: center;
+  margin: 20px 0px;
+  padding: 10px 15px;
+  border: 1px solid var(--error);
+  border-radius: 8px;
+  background-color: #edc4c5;
+}
